@@ -598,18 +598,7 @@ class _AboutMenuViewState extends State<AboutMenuView> {
           "Road_traffic_density": widget.modelInfo.Road_traffic_density,
           "Festival": widget.modelInfo.Festival,
           "City": widget.modelInfo.City
-        }
-            // {
-            //   "Delivery_person_Ratings": 4.6,
-            //   "Vehicle_condition": 3,
-            //   "distance": 0.02,
-            //   "multiple_deliveries": 1,
-            //   "Weatherconditions": "Sunny",
-            //   "Road_traffic_density": "Jam ",
-            //   "Festival": "Yes",
-            //   "City": "Urban "
-            // }
-            ),
+        }),
         headers: {'Content-Type': 'application/json'},
       );
 

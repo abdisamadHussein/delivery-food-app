@@ -28,9 +28,9 @@ class FoodItemData {
 
 class ModelInfo {
   final double Delivery_person_Ratings;
-  final int Vehicle_condition;
+  final double Vehicle_condition;
   final double distance;
-  final int multiple_deliveries;
+  final double multiple_deliveries;
   final String Weatherconditions;
   final String Road_traffic_density;
   final String Festival;

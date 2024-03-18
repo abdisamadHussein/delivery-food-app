@@ -69,6 +69,45 @@ List<FoodItemData> foodItems = [
         Festival: 'No',
         City: 'Urbarn ',
       )),
+  FoodItemData(
+      imageUrl: AssetsConstants.sandwich,
+      itemName: "Sandwich",
+      rating: 4.7,
+      distance: 130,
+      price: 1000,
+      deliveryInfo: "Free Delivery",
+      preparationTime: 12,
+      description:
+          "Sliced turkey breast with fresh vegetables on whole grain bread.",
+      modelInfo: ModelInfo(
+        Delivery_person_Ratings: 4.7,
+        Vehicle_condition: 3.0,
+        distance: 6,
+        multiple_deliveries: 1.0,
+        Weatherconditions: 'Fog',
+        Road_traffic_density: 'Low ',
+        Festival: 'No',
+        City: 'Metropolitian ',
+      )),
+  FoodItemData(
+      imageUrl: AssetsConstants.icecream,
+      itemName: "Ice Cream",
+      rating: 4.6,
+      distance: 140,
+      price: 800,
+      deliveryInfo: "Free Delivery",
+      preparationTime: 10,
+      description: "Rich chocolate ice cream made with premium cocoa.",
+      modelInfo: ModelInfo(
+        Delivery_person_Ratings: 4.6,
+        Vehicle_condition: 1.0,
+        distance: 9.0,
+        multiple_deliveries: 0.0,
+        Weatherconditions: 'Fog',
+        Road_traffic_density: 'Low ',
+        Festival: 'Yes',
+        City: 'Urban ',
+      )),
 ];
 
 class HomeView extends StatelessWidget {
@@ -254,7 +293,6 @@ class HomeView extends StatelessWidget {
                             )))
                         .values
                         .toList()),
-
                 Column(
                   children: [
                     // Your existing code for the category section here...
@@ -309,8 +347,9 @@ class HomeView extends StatelessWidget {
                                             MaterialPageRoute(
                                               builder: (context) =>
                                                   AboutMenuView(
-                                                imageUrl: foodItems[index * 2]
-                                                    .imageUrl,
+                                                imageUrl:
+                                                    foodItems[index * 2 + 1]
+                                                        .imageUrl,
                                                 title: foodItems[index * 2 + 1]
                                                     .itemName,
                                                 price: foodItems[index * 2 + 1]
@@ -342,39 +381,6 @@ class HomeView extends StatelessWidget {
                     ),
                   ],
                 ),
-
-                // Padding(
-                //   padding: EdgeInsets.symmetric(horizontal: getWidth(24)),
-                //   child: Column(
-                //     children: [
-                //       // Your existing code for the category section here...
-
-                //       const Gap(24),
-
-                //       // Food items section
-                //       ListView.builder(
-                //         shrinkWrap: true,
-                //         physics: NeverScrollableScrollPhysics(),
-                //         itemCount: foodItems.length,
-                //         itemBuilder: (context, index) {
-                //           return Padding(
-                //             padding: const EdgeInsets.only(bottom: 16.0),
-                //             child: FoodItem(foodItem: foodItems[index]),
-                //           );
-                //         },
-                //       ),
-                //     ],
-                //   ),
-                // )
-                // const Gap(24),
-                // const Row(
-                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //   children: [
-                //     FoodItem(),
-                //     FoodItem(),
-                //   ],
-                // ),
-                // const Gap(16),
               ],
             ),
           )

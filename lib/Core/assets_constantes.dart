@@ -13,6 +13,8 @@ class AssetsConstants {
   static const String pizza = "assets/png/pizza.png";
   static const String taco = "assets/png/taco.png";
   static const String coffee = "assets/png/coffee.png";
+  static const String sandwich = "assets/png/sandwich.png";
+  static const String icecream = "assets/png/icecream.png";
 
   static const String ordinaryBurger = "assets/png/ordinary_burger.png";
 
